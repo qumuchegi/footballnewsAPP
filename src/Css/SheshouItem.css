@@ -1,0 +1,40 @@
+table{
+	text-align: center;
+	width: 100%
+}
+.SheshoubangItem{
+	background-color: rgba(12,23,145,0.1);
+    margin-top: 12px;
+    width:100%;
+	
+}
+#paiming{
+ 	background-color: rgba(123,32,123,0.2);
+	border-radius: 3px;
+	width: 10%;
+	text-align: center;
+	padding: 3%;
+ }
+#playername{
+ 	border-radius: 2px;
+	background-color: rgba(23,134,23,0.2);
+	width:20%;
+	text-align: center;
+ 
+}
+#goalsnumber{
+ 	border-radius: 3px;
+	background-color: rgba(123,32,1,0.2);
+	width: 20%;
+	text-align: center;
+ 
+}
+#clubname{
+	text-align: center; 
+	border-radius: 3px;
+}
+
+#clubname:hover{
+	background-color: rgba(123,23,45,0.5);
+
+}

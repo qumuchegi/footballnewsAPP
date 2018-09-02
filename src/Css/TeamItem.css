@@ -1,0 +1,49 @@
+#time{
+	background-color: white;
+	border-radius: 8%;
+	display:inline-block;
+	margin: 20px
+}
+#leaguetype{
+	background-color: white;
+	border-radius: 8%;
+	display:inline-block;
+	margin: 20px
+}
+#clubname1{
+	background-color: rgba(12,12,12,0.2);
+	border-radius: 8%;
+ 	margin: 20px;
+	color:white;
+}
+#clubname2{
+	background-color: rgba(12,12,12,0.2);
+	border-radius: 8%;
+ 	margin: 20px;
+	color:white;
+}
+#result{
+	background-color: rgba(12,212,13,0.2);
+	border-radius: 8%;
+ 	margin: 20px
+}
+#ClubQueryItem{
+	display: inline-block;
+	font-size: 120%;
+	font-family: 'YouYuan';
+	text-align: center;
+	border-radius: 4px;
+	background-color:rgba(13,121,123,0.3);
+	width: 20%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 7%;
+	box-shadow: 7px 6px 2px #555555;
+	padding:4% 0.4% 4% 0.4%;
+
+
+}
+#ClubQueryItem:hover{
+    box-shadow: 3px 4px 1px #111111;
+ 
+}

@@ -1,0 +1,71 @@
+body{
+	margin: 0;
+	padding: 0
+}
+#header{
+  height: 30%;
+  font-size: 200%;
+  margin:0px;
+  padding:0px;
+  width: 100%;
+  background-color: rgba(123,123,234,0.1);
+  margin-bottom: 0;
+  padding: 0
+}
+#header h1{
+  display:inline-block;
+  font-family: 'STCaiyun';
+  color:rgb(23,24,223,0.7);
+  width:30%;
+  margin:0;
+  padding: 0
+}
+#header #inputandbutton{
+	float:right;
+
+}
+#header #inputandbutton input{
+  background-color: rgba(22,33,44,0.2);
+}
+#header #inputandbutton button{
+  height:20px;
+  background-color: rgba(121,223,145,0.8);
+}
+#header #inputandbutton button:active{
+  background-color: rgba(21,23,45,0.6);
+}
+hr{
+	margin: 0;
+	padding: 0;
+}
+.LeaguesOptions{
+	    padding:8% 0 8% 0;
+}
+.LeaguesOptions:hover{
+	background-color: rgba(12,234,233,0.6);
+}
+#leaguenav{
+  	color:green;
+  	width:25%;
+    float: left;
+    margin: 0;
+    font-size: 200%;
+  	text-align: center;
+  	background-color: rgba(123,123,234,0.1);
+  	font-family:'STHupo';
+  	padding: 1%;
+  	padding-right:0;
+    padding-left: 0;
+}
+#leagueImg{
+	width:24%;
+}
+#Right{
+  color:red;
+  float:right;
+  width:75%;
+  margin: 0
+}
+#Rightcontent{
+ 	margin: 0
+}

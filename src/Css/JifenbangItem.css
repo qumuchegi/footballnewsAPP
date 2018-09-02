@@ -1,0 +1,33 @@
+table{
+	text-align: center;
+	width: 100%
+}
+.JifenbangItem{
+	background-color: rgba(12,23,145,0.1);
+    margin-top: 12px;
+    width:100%;
+	
+}
+#Jifen_paiming{
+ 	background-color: rgba(123,32,123,0.2);
+	border-radius: 3px;
+	width: 10%;
+	text-align: center;
+	padding: 3%;
+ }
+ 
+#Jifen_clubname{
+	text-align: center; 
+	border-radius: 3px;
+	background-color: rgba(12,111,213,0.3);
+}
+
+#Jifen_clubname:hover{
+	background-color: rgba(123,23,45,0.5);
+
+}
+#Jifen_jifen{
+	background-color: rgba(23,234,43,0.3);
+	border-radius: 4px;
+
+}
