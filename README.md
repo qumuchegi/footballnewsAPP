@@ -1,3 +1,13 @@
+1使用的库和框架：使用 Reactjs构建组件、
+                          Redux管理数据、
+                          Fetch前端请求数据、
+                          Express+superAgent后端跨域中转、
+                          Redux-thunk异步请求中间件
+2 数据来源：[聚合数据免费API](https://www.juhe.cn/docs/api/id/90)
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
