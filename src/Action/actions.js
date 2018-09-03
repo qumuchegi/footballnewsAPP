@@ -16,11 +16,11 @@ export const fetch_start_team=()=>({
 })
 export const fetch_success=(fetchresult)=>({
   type:'FETCH_SUCCESS',
-    result:fetchresult
+  result:fetchresult
 })
 export const fetch_success_team=(fetchresult)=>({
   type:'FETCH_SUCCESS_TEAM',
-    result:fetchresult
+  result:fetchresult
 })
 export const fetch_failure=()=>({
   type:'FETCH_FAILURE'
@@ -34,7 +34,7 @@ export const fetch_failure_team=()=>({
 //////以下三个render都不是action，因为如果当做action来用的话，在用dispatch来调用的时候就会出错
 //dispatch只能在异步分发action的时候才能调用action，而这几个都不是异步。不过这些但功能相当于action
 export const renderteam=(ClubsInf)=>{
-  ReactDOM.render(
+   ReactDOM.render(
     <ClubQueryComponent
     ClubsInf={ClubsInf}
     />,

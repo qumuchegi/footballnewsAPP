@@ -14,6 +14,7 @@ import JifenbangItem from './JifenbangItem';
 		  <td>积分</td>
 		 </tr>
 		{jifenInf.map(Item=>
+			 
 			<JifenbangItem 
 			  key={i++}
 			  paiming={Item.c1} 

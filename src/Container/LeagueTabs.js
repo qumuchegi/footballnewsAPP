@@ -8,7 +8,8 @@ const LeagueTABS=({status,leagues,onClick_saicheng,onClick_sheshou,onClick_jifen
 	switch(status){
 		case'loading':return (<div>loading……</div>);
 	    case'success':{ 
-	    	if(leagues.error_code==10012) return(<div>超过每日可允许请求次数</div>)
+	    	if(leagues.error_code==10012) return(<div>超过每日可允许请求次数</div>);
+	    	if(leagues.error_code==209002) return(<div>查询不到联赛信息</div>);
 		  return (
 	      <div id={leagues.result.key}> 
 	      <div onClick={
