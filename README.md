@@ -1,4 +1,4 @@
-这是2.0版的足球查询web应用。比[1.0版]()多了用redux管理数据。
+这是2.0版的足球查询web应用。比[1.0版](https://github.com/qumuchegi/MY_FIRST_REACT_APP)多了用redux管理数据。
 
 1使用的库和框架：使用 Reactjs构建组件、
                           Redux管理数据、
