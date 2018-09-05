@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {connect} from 'react-redux';
 import '../Css/LeagueTabs.css';
 //需要引入对应赛程、射手、积分的组件
@@ -7,9 +6,9 @@ import '../Css/LeagueTabs.css';
 const LeagueTABS=({status,leagues,onClick_saicheng,onClick_sheshou,onClick_jifen})=>{//传入联赛信息
 	switch(status){
 		case'loading':return (<div>loading……</div>);
-	    case'success':{ 
-	    	if(leagues.error_code==10012) return(<div>超过每日可允许请求次数</div>);
-	    	if(leagues.error_code==209002) return(<div>查询不到联赛信息</div>);
+	    case'success':
+	    	if(leagues.error_code===10012) return(<div>超过每日可允许请求次数</div>);
+	    	if(leagues.error_code===209002) return(<div>查询不到联赛信息</div>);
 		  return (
 	      <div id={leagues.result.key}> 
 	      <div onClick={
@@ -49,12 +48,12 @@ const LeagueTABS=({status,leagues,onClick_saicheng,onClick_sheshou,onClick_jifen
 	 	    } id='jifenlink'>积分榜</div>
 
 	        </div>
-	        );};
+	        );;
 	        case'failure':return (<div>failure</div>);
 	        default:return(<div></div>)
 	        }
 	
-        }
+}
 const mapStateToProps=state=>{
 	let leagues=state.leagues;
 	return{

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import SheshoubangItem from './SheshoubangItem';
  
 const SheshoubangComponent=({sheshouInf,leaguekey})=>{ 

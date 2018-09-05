@@ -1,11 +1,9 @@
 import React from 'react';
-import Proptypes from 'prop-types';
  
 const LeagueLink=({onClick,children,id,className})=>{
-	let leagueImg_key=id;
-	return(
+ 	return(
 		<div onClick={()=>onClick()} id={id} className={className}>
-		<img src={'../img/'+id+'icon.png'} id='leagueImg'/>
+		<img src={'../img/'+id+'icon.png' } alt={id} id='leagueImg'/>
 		{children}
  	    </div>
 		)

@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import SaichengItem from './SaichengItem';
-import {connect} from 'react-redux';
 
 const SaichengComponent=({saichengInf,leaguekey,last})=>{ 
 	let i=0;
@@ -15,7 +13,7 @@ const SaichengComponent=({saichengInf,leaguekey,last})=>{
 			  clubname1={Item.c4T1} 
 			  clubname2={Item.c4T2} 
  			  result={Item.c4R}
- 			  ifend={Item.c1=='已结束'?'已结束':'无直播'}
+ 			  ifend={Item.c1==='已结束'?'已结束':'无直播'}
 			  />)}
 		</div>
 		)

@@ -1,8 +1,6 @@
 import {connect} from 'react-redux';
 import {fetch_league} from '../Action/actions';
 import LeagueLink from '../Component/LeagueLink';
-import React from 'react';
-import ReactDOM from 'react-dom';
  
 const mapDispatchToProps=(dispatch,ownProps)=>{
 	return {

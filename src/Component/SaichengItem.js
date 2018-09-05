@@ -1,8 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import '../Css/SaichengItem.css';
-import {fetch_team} from '../Action/actions';
-import {connect} from 'react-redux';
 
 const SaichengItem=({time,clubname1,clubname2,result,ifend})=>
 <div class='SaichengItem'>

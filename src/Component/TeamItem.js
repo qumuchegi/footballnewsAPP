@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import '../Css/TeamItem.css';
 
 const ClubQueryItem=({time,clubname1,clubname2,result,leaguetype})=>

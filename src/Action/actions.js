@@ -85,7 +85,7 @@ export const fetch_league=leagueName=>{//异步请求联赛的Action对象
             if (response.status !== 200) {
                 alert( response.status);
               };
-            if (response.status== 200)
+            if (response.status=== 200)
  
            response.json().then(
       	    (responseJSON)=>{ 
