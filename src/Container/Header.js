@@ -1,10 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {fetch_team} from '../Action/actions';
+import {fetch_team,willrenderteam} from '../Action/actions';
 
 let Header=({dispatch})=>{
 	let clickToqueryTeam=inputTeam=>{
-	dispatch(fetch_team(inputTeam))
+	dispatch(willrenderteam());
+   	dispatch(fetch_team(inputTeam))
 };
     let inputvalue='巴塞罗那';
     let inputchange=e=>{

@@ -31,6 +31,13 @@ export const fetch_failure_team=()=>({
 
 })
 
+////////
+export const willrenderteam=()=>({
+  type:'RENDER_TEAM'
+})
+export const willrenderleague=()=>({
+  type:'RENDER_LEAGUE'
+})
 //////以下三个render都不是action，因为如果当做action来用的话，在用dispatch来调用的时候就会出错
 //dispatch只能在异步分发action的时候才能调用action，而这几个都不是异步。不过这些但功能相当于action
 export const renderteam=(ClubsInf)=>{
@@ -97,7 +104,7 @@ export const fetch_league=leagueName=>{//异步请求联赛的Action对象
 }
 export const fetch_team=teamName=>{//异步请求球队的Action对象
 	return (dispatch)=>{
-	 	var url='http://localhost:3001/team?dtype=&team='+
+  	 	var url='http://localhost:3001/team?dtype=&team='+
 	 	encodeURI(teamName)+'&key=b117a5992d33a7f05413a7a4349d7b78';//API请求根URL,应该请求代理服务器
         dispatch(fetch_start_team());
         return fetch(url).then(
