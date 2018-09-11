@@ -20,7 +20,14 @@ const App=({status})=>{
 		   {status==='willRender_team'?
 		  <div id='Rightcontent'><Team/></div>:null
 		   }
-		   
+		   {status==='initional'?
+		   <div style={{color:'rgba(112,34,123,0.9)'}}>简单的React/Redux webAPP.
+			这是2.0版的足球查询web应用。比1.0版多了用redux管理数据。
+			<p>
+		   1使用的库和框架：使用 Reactjs构建组件、 Redux管理数据、 Fetch前端请求数据、
+		    Express+superAgent后端跨域中转、 Redux-thunk异步请求中间件
+		    2 数据来源：聚合数据免费API
+			</p></div>:null}
 		  </div>
 		</div>
 		)

@@ -40,10 +40,11 @@ export const willrenderleague=()=>({
 })
 //////以下三个render都不是action，因为如果当做action来用的话，在用dispatch来调用的时候就会出错
 //dispatch只能在异步分发action的时候才能调用action，而这几个都不是异步。不过这些但功能相当于action
-export const renderteam=(ClubsInf)=>{
+export const renderteam=(ClubsInf,Clubname)=>{
    ReactDOM.render(
     <ClubQueryComponent
     ClubsInf={ClubsInf}
+    Clubname={Clubname}
     />,
     document.getElementById('Rightcontent')
     )

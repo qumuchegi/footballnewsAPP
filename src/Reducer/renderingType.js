@@ -1,4 +1,4 @@
-const renderingType=(state={status:null},action)=>{
+const renderingType=(state={status:'initional'},action)=>{
 switch(action.type){
     case'RENDER_LEAGUE':return {...state,status:'willRender_league'};
     case'RENDER_TEAM':return {...state,status:'willRender_team'};

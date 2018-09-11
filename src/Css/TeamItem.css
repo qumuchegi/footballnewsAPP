@@ -12,19 +12,19 @@
 }
 #clubname1{
 	background-color: rgba(12,12,12,0.2);
-	border-radius: 8%;
+	border-radius: 1px;
  	margin: 20px;
 	color:white;
 }
 #clubname2{
 	background-color: rgba(12,12,12,0.2);
-	border-radius: 8%;
+	border-radius: 1px;
  	margin: 20px;
 	color:white;
 }
 #result{
 	background-color: rgba(12,212,13,0.2);
-	border-radius: 8%;
+	border-radius: 4px;
  	margin: 20px
 }
 #ClubQueryItem{

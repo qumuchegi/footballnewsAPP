@@ -7,16 +7,16 @@ let Header=({dispatch})=>{
 	dispatch(willrenderteam());
    	dispatch(fetch_team(inputTeam))
 };
-    let inputvalue='巴塞罗那';
-    let inputchange=e=>{
-        inputvalue=e.target.value;
+     let inputvalue='巴塞罗那';
+     let inputchange=e=>{
+        inputvalue=e.target.value||'巴塞罗那';
     }
   
 	return (
 		<div id="header">
 		 <h1>足球查询web</h1>
 		 <div id='inputandbutton'>
-		 <input onChange={inputchange} placeholder="巴塞罗那"/>
+		 <input onChange={inputchange} ref={(input)=>{this.input=input}} placeholder="巴塞罗那"/>
 		 <button onClick={()=>clickToqueryTeam(inputvalue)}>查询球队</button>
 		 </div>
 		</div>

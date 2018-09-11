@@ -16,6 +16,7 @@
 	background-color: rgba(12,34,111,0.3);
  }
 #saichenglink{
+	color:whitesmoke;
 	display:inline-block;
 	margin-left: 13%;
  	padding: 3% 14% 3% 14%;
@@ -26,6 +27,7 @@
 }
 #sheshoulink{
 	display:inline-block;
+	color:whitesmoke;
 	margin-left: 16%;
  	padding: 3% 14% 3% 14%;
 	margin: 0 0 0 0;
@@ -36,6 +38,7 @@
 }
 #jifenlink{
 	display:inline-block;
+	color:whitesmoke;
 	margin-left: 16%;
  	padding: 3% 14% 3% 13.5%;
 	margin: 0 0 0 0;
