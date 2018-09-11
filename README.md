@@ -1,6 +1,12 @@
 这是2.0版的足球查询web应用。比[1.0版](https://github.com/qumuchegi/MY_FIRST_REACT_APP)多了用redux管理数据。
 
-1使用的库和框架：使用 Reactjs构建组件、
+需要改进：1.使用react-router添加路由功能；
+
+         2.页面美化：增加Loading CSS效果图;
+          
+         3.改进手机上页面不美观的缺点，使页面适配手机端.
+
+1使用的库和框架：          使用 Reactjs构建组件、
                           Redux管理数据、
                           Fetch前端请求数据、
                           Express+superAgent后端跨域中转、
