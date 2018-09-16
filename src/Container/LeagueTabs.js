@@ -1,11 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import '../Css/LeagueTabs.css';
+import LoadingDiv from '../Component/LoadingDiv';
 //需要引入对应赛程、射手、积分的组件
  
 const LeagueTABS=({status,leagues,onClick_saicheng,onClick_sheshou,onClick_jifen})=>{//传入联赛信息
 	switch(status){
-		case'loading':return (<div>loading……</div>);
+		case'loading':return (<div><LoadingDiv/></div>);
 	    case'success':
 	    	if(leagues.error_code===10012) return(<div>超过每日可允许请求次数</div>);
 	    	if(leagues.error_code===209002) return(<div>查询不到联赛信息</div>);
@@ -21,7 +22,8 @@ const LeagueTABS=({status,leagues,onClick_saicheng,onClick_sheshou,onClick_jifen
 	 		:
 	 		(leagues.result.views.saicheng3)
 	 		,
-	        leagues.result.key,
+			leagues.result.key
+			,
 	        (leagues.result.views.saicheng3==null)?
 	    	  (leagues.result.tabs.saicheng2==null?
 	    		leagues.result.tabs.saicheng1:

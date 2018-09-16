@@ -1,10 +1,11 @@
 import {connect} from 'react-redux';
 import React from 'react';
 import {renderteam} from '../Action/actions';
+import LoadingDiv from '../Component/LoadingDiv';
 
 const TEAM=({status,teams})=>{
 	switch(status){
-		case'loading_team':return (<div>Loading……</div>);
+		case'loading_team':return (<div><LoadingDiv/></div>);
 		case'success_team':
         if(teams.error_code===10012) return(<div>超过每日可允许请求次数</div>);
         if(teams.error_code===209005) return(<div>查询不到队伍相关信息</div>);

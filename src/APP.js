@@ -4,11 +4,12 @@ import LeaguesOptions from './Component/LeaguesOptions';
 import LeagueTabs_container from './Container/LeagueTabs_container';
 import Team from './Container/Team';
 import {connect} from 'react-redux';
+ 
 
 const App=({status})=>{
- 
 		return(
 		<div>
+      
 		  <Header/>
 		  <hr/>
 		  <LeaguesOptions />
@@ -16,7 +17,6 @@ const App=({status})=>{
 		  {status==='willRender_league'?
 		   (<div><LeagueTabs_container/><div id='Rightcontent'></div></div>): null
 		  }
-		   
 		   {status==='willRender_team'?
 		  <div id='Rightcontent'><Team/></div>:null
 		   }
@@ -31,7 +31,6 @@ const App=({status})=>{
 		  </div>
 		</div>
 		)
-	
 }
 const mapStateToProps=state=>{
 	return{

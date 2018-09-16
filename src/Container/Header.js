@@ -11,13 +11,17 @@ let Header=({dispatch})=>{
      let inputchange=e=>{
         inputvalue=e.target.value||'巴塞罗那';
     }
-  
+	 let clearinput=()=>{
+		inputvalue='巴塞罗那';
+		this.input.value=null;
+		 }
 	return (
 		<div id="header">
 		 <h1>足球查询web</h1>
 		 <div id='inputandbutton'>
 		 <input onChange={inputchange} ref={(input)=>{this.input=input}} placeholder="巴塞罗那"/>
-		 <button onClick={()=>clickToqueryTeam(inputvalue)}>查询球队</button>
+		 <button onClick={()=>clickToqueryTeam(inputvalue)}>查询</button>
+		 <button onClick={()=>clearinput()}>清空</button>
 		 </div>
 		</div>
 		)
