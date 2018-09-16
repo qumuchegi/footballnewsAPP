@@ -1,10 +1,10 @@
 这是2.0版的足球查询web应用。比[1.0版](https://github.com/qumuchegi/MY_FIRST_REACT_APP)多了用redux管理数据。
 
-下一个commit将需要改进：
+下一个版本将需要改进：
          
          1.使用react-router添加路由功能；
 
-         2.页面美化：增加Loading CSS效果图（用protals)、点击联赛和赛程等按钮后改变其背景使其与之后的内容区一样;
+         2.页面美化：增加Loading CSS效果图、点击联赛和赛程等按钮后改变其背景使其与之后的内容区一样;
           
          3.改进手机上页面不美观的缺点，使页面适配手机端.
 
